@@ -3,6 +3,17 @@ package ru.skypro;
 
 public class Main {
 
+    public static int family(Emploee[] emploees) {
+        for (int i = 0; i < emploees.length; i++) {
+            if(emploees[i] == null) {
+                break;
+            } else {
+                System.out.println(emploees[i].getFIO());
+            }
+        }
+        return 0;
+    }
+
     public static double sumSal(Emploee[] emploees) {
         double sum = 0;
         for (int i = 1; i < emploees.length; i++) {
@@ -74,6 +85,7 @@ public class Main {
         minSal(emploees);
         maxSal(emploees);
         sredSal(emploees);
+        family(emploees);
 
     }
 }
