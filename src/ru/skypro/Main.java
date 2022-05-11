@@ -1,5 +1,6 @@
 package ru.skypro;
 
+
 public class Main {
 
     public static double sumSal(Emploee[] emploees) {
